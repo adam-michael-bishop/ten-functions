@@ -21,3 +21,45 @@
  * concat
  */
 
+function isTrue(bool){
+    return bool === true;
+}
+
+function isFalse(bool){
+    return bool === false;
+}
+
+function not(input){
+    return !input;
+}
+
+function addOne(input){
+    if(isNaN(parseFloat(input))){
+        return NaN;
+    }
+    return parseFloat(input) + 1;
+}
+
+function isEven(input){
+    return parseFloat(input) % 2 === 0;
+}
+
+function isIdentical(a, b){
+    return a === b;
+}
+
+function isEqual(a, b){
+    return  a == b;
+}
+
+function or(a, b){
+    return a || b;
+}
+
+function and(a, b){
+    return a && b;
+}
+
+function concat(a, b){
+    return `${a.toString()}${b.toString()}`;
+}
